@@ -172,8 +172,6 @@ const CreatePage = () => {
 
   // add edit/done button to input
   const convertImportValue = (rawImport) => {
-    console.log(rawImport);
-
     if (typeof rawImport === "string") {
       if (rawImport.slice(0, 14) === "compare?items=") {
         rawImport = rawImport.slice(14, rawImport.length);
@@ -240,8 +238,6 @@ const CreatePage = () => {
         bgColor: itemChecked ? null : modelViewerBgColor,
       };
 
-      console.log(mogVariables);
-
       // catch error and delete object
       addMog({
         variables: {
@@ -277,8 +273,6 @@ const CreatePage = () => {
       wowModelViewer.destroy();
     }
 
-    //console.log(raceInt, genderInt);
-
     const defaultCharacter = {
       race: parseInt(raceInt),
       gender: parseInt(genderInt),
@@ -306,10 +300,6 @@ const CreatePage = () => {
             ]
           : [];
       });
-
-      console.log(itemData);
-      console.log(itemsDisplayArray);
-      console.log(itemOverrides);
 
       // Update Items on Default Characater
       defaultCharacter.items = itemsDisplayArray;

@@ -43,8 +43,6 @@ const UserListPage = () => {
     },
   });
 
-  console.log(currentUser);
-
   const [modelViewerShowStates, setModelViewerShowStates] = useState({});
 
   const updateModelViewerShowStates = (mogId, newState) => {
