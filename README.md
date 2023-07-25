@@ -4,4 +4,4 @@ Created with React (CRA), GraphQL, Apollo, Tailwind + DaisyUI, Firebase (users),
 
 Back end can be found here: https://github.com/mcfry/mog-up-server (give it a second to wake up from sleep)
 
-![](https://imgur.com/a/XS6LgcB)
+![](https://github.com/mcfry/mog-up-client/blob/master/public/mogup.gif)
