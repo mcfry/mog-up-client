@@ -35,6 +35,8 @@ const viewerRoutes = () => (
           <Route element={<views.App />}>
             <Route path="/" element={<views.ListPage />} />
             <Route path="/allmogs" element={<views.ListPage />} />
+            <Route path="/about" element={<views.AboutPage />} />
+            <Route path="*" element={<views.NotFoundPage />} />
 
             <Route element={<PrivateRoute />}>
               <Route path="/mymogs" element={<views.UserListPage />} />

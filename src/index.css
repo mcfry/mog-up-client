@@ -54,7 +54,7 @@ code {
   max-width: 30em;
 }
 
-.grow {
+/* .grow {
   -moz-osx-font-smoothing: grayscale;
   backface-visibility: hidden;
   transform: translateZ(0);
@@ -84,7 +84,7 @@ code {
 
 .grow-large:active {
   transform: scale(0.95);
-}
+} */
 
 .circles {
   position: absolute;

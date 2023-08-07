@@ -224,10 +224,68 @@ const Mog = ({ mog, refresh, deletable, showState, updateShowState }) => {
   }
 
   if (itemLoading) {
-    return <div>Loading</div>;
+    return (
+      <div className="flex justify-center p-3 mt-5">
+        <div className="flex flex-col md:flex-row w-full md:max-w-4xl rounded-lg bg-white shadow-lg lg:border-r-2">
+          <div className="hidden lg:block w-full lg:w-1/2 h-full bg-white">
+            <div
+              role="status"
+              className="animate-pulse flex flex-col w-full h-full p-4"
+            >
+              <div class="h-2.5 bg-orange-200 rounded-full dark:bg-orange-700 w-32 mb-2.5"></div>
+              <div class="w-48 h-2 mb-10 bg-orange-200 rounded-full dark:bg-orange-700"></div>
+              <div class="flex items-end mt-4 space-x-6 h-full">
+                <div class="w-full bg-orange-200 rounded-t-lg h-96 dark:bg-orange-700"></div>
+                <div class="w-full h-[28rem] bg-orange-200 rounded-t-lg dark:bg-orange-700"></div>
+                <div class="w-full bg-orange-200 rounded-t-lg h-72 dark:bg-orange-700"></div>
+                <div class="w-full h-[30rem] bg-orange-200 rounded-t-lg dark:bg-orange-700"></div>
+                <div class="w-full bg-orange-200 rounded-t-lg h-96 dark:bg-orange-700"></div>
+                <div class="w-full bg-orange-200 rounded-t-lg h-72 dark:bg-orange-700"></div>
+                <div class="w-full bg-orange-200 rounded-t-lg h-80 dark:bg-orange-700"></div>
+              </div>
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+          <div className="block w-full lg:w-1/2 p-6 flex flex-col justify-start">
+            <div
+              role="status"
+              className="animate-pulse flex justify-center items-center"
+            >
+              <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-6/12" />
+            </div>
+            <div className="flex justify-between pt-8 pb-0 mb-0">
+              <div
+                role="status"
+                className="animate-pulse w-1/2 flex flex-col space-y-12"
+              >
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <span className="sr-only">Loading...</span>
+              </div>
+              <div
+                role="status"
+                className="animate-pulse w-1/2 flex flex-col space-y-12"
+              >
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <div className="h-8 bg-orange-200 rounded-full dark:bg-orange-700 w-11/12" />
+                <span className="sr-only">Loading...</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
-
-  //console.log(itemsNormalized);
 
   return (
     <div className="flex justify-center p-3 mt-5">

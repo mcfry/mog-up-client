@@ -1,17 +1,21 @@
-import App from './App'
-import ListPage from './ListPage'
-import UserListPage from './UserListPage'
-import CreatePage from './CreatePage'
-import LoginPage from './LoginPage'
-import RegisterPage from './RegisterPage'
+import App from "./App";
+import AboutPage from "./AboutPage";
+import ListPage from "./ListPage";
+import UserListPage from "./UserListPage";
+import CreatePage from "./CreatePage";
+import LoginPage from "./LoginPage";
+import RegisterPage from "./RegisterPage";
+import NotFoundPage from "./NotFoundPage";
 
 const componentTreeIndex = {
-	App,
-	ListPage,
-	UserListPage,
-	CreatePage,
-	LoginPage,
-	RegisterPage
-}
+  App,
+  AboutPage,
+  ListPage,
+  UserListPage,
+  CreatePage,
+  LoginPage,
+  RegisterPage,
+  NotFoundPage,
+};
 
-export default componentTreeIndex
+export default componentTreeIndex;

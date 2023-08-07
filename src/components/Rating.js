@@ -103,7 +103,7 @@ const Rating = ({
       onMouseEnter={() => setShowMyRating(true)}
     >
       {showMyRating && (
-        <div className="flex justify-between font-bold">
+        <div className="flex justify-between font-bold drop-shadow">
           <FontAwesomeIcon
             icon={userStar1Value}
             className={starActiveCss}
@@ -161,7 +161,7 @@ const Rating = ({
       )}
 
       {!showMyRating && (
-        <div className="flex justify-between text-black">
+        <div className="flex justify-between text-gray-900 drop-shadow">
           {createExistingStars(managedAvgRating)}
           <div className="leading-none font-bold px-1">
             {managedAvgRating ? managedAvgRating.toFixed(1) : "No Ratings"} (
